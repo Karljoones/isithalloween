@@ -14,12 +14,24 @@ body {
   }
 }
 
-h1.isithalloween {
+h1.title {
   font-size: 100px;
   line-height: 100pt;
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  h1.title {
+    font-size: 50px;
+  }
+}
+
 h3.subtitle {
   font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  h3.subtitle {
+    font-size: 25px;
+  }
 }

@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="isithalloween">{isItHalloween() ? yes[Math.floor(Math.random() * yes.length)] : no[Math.floor(Math.random() * no.length)]}</h1>
+      <h1 className="title">{isItHalloween() ? yes[Math.floor(Math.random() * yes.length)] : no[Math.floor(Math.random() * no.length)]}</h1>
       <h3 className="subtitle">{isItHalloween() ? yesSub[Math.floor(Math.random() * yesSub.length)] : noSub[Math.floor(Math.random() * noSub.length)]}</h3>
     </div>
   );
