@@ -8,7 +8,7 @@ function App() {
   const isItHalloween = () => {
     const today = new Date();
     const halloween = new Date(today.getFullYear, 10, 31);
-    return today === halloween;
+    return (today.getDate() === halloween.getDate()) && (today.getMonth() === halloween.getMonth());
   }
 
   return (
