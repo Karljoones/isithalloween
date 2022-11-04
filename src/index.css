@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  margin: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+h1.isithalloween {
+  font-size: 120pt;
+  line-height: 100pt;
+  font-weight: bold;
+}
+
+h3.subtitle {
+  font-size: 50pt;
+}

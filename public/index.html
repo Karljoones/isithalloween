@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Is it halloween? Who knows! Check here."/>
+    <meta name="keywords" content="halloween, halloween checker, check halloween, holiday checker, is it halloween, when is halloween" />
+
+    <meta name="og:url" content="https://isithalloween.today" />
+    <meta name="og:title" content="Is it Halloween?" />
+    <meta name="og:site_name" content="Is it Halloween?" />
+    <meta name="og:description" content="Is it Halloween? Who knows! Check here." />
+    <meta name="og:image" content="%PUBLIC_URL%/is-it-halloween-share-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://isithalloween.today" />
+    <meta name="twitter:title" content="Is it Halloween?" />
+    <meta name="twitter:description" content="Is it Halloween? Who knows! Check here." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/is-it-halloween-share-image.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./serviceworker.js')
+            .then((reg) => console.debug('Success: ', reg.scope))
+            .catch((err) => console.debug('Failure: ', err));
+        })
+      }
+    </script>
+    <title>Is It Halloween?</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
