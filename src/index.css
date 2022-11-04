@@ -4,6 +4,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: black;
   color: white;
+  margin: 20px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -14,11 +15,11 @@ body {
 }
 
 h1.isithalloween {
-  font-size: 120pt;
+  font-size: 100px;
   line-height: 100pt;
   font-weight: bold;
 }
 
 h3.subtitle {
-  font-size: 50pt;
+  font-size: 50px;
 }
